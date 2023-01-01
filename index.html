@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/c5f2e8b9cc.js" crossorigin="anonymous"></script>
+    <!-- vue -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <link href="/Home.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智慧喜</title>
+</head>
+
+<body>
+    <header>
+        <!-- AI智慧喜 -->
+    </header>
+
+    <div class="main">
+        <div class="grid-container">
+            <nav>
+                <a href="javascript:void(0)" onclick="openTab(event, 'Home');">
+                    <div class="tablink">
+                        <i class="fa-solid fa-house"></i></div>
+                </a>
+                <a href="javascript:void(0)" onclick="openTab(event, 'Order');">
+                    <div class="tablink"><i class="fa-solid fa-clipboard"></i></div>
+                </a>
+                <a href="javascript:void(0)" onclick="openTab(event, 'Comunity');">
+                    <div class="tablink"><i class="fa-solid fa-comments"></i></div>
+                </a>
+                <a href="javascript:void(0)" onclick="openTab(event, 'Member');">
+                    <div class="tablink">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                </a>
+            </nav>
+
+
+            <div id="Home" class="tab" style="display:none">
+                <div class="home">
+                    <section class="ad">
+                        <img src="https://shop.kenk.com.tw/asset/upload/images/product/841/2dacfaad8b80b61880f24992dd48e1ed.jpg"
+                            style="max-width:100%;">
+                    </section>
+                    <section class="fu">
+                        <div class="fu1" onclick="location.href='Site.html';" style="cursor :pointer;">
+                            <i class="fa-solid fa-magnifying-glass-location"></i>
+                            <p>查找站點</p>
+                        </div>
+                        <div class="fu1" onclick="location.href='QR.html';" style="cursor :pointer;">
+                            <i class="fa-solid fa-qrcode"></i>
+                            <p>掃碼登入</p>
+                        </div>
+                        <div class="fu2" onclick="location.href='Order.html';" style="cursor :pointer;">
+                            <i class="fa-regular fa-clipboard"></i>
+                            <p>建立訂單</p>
+                        </div>
+                        <div class="lo1">
+                            <i class="fa-solid fa-location-crosshairs"></i>
+                            <input class="loc" placeholder="您的位置?"></input>
+                        </div>
+                        <div class="lo1" onclick="location.href='locate.html';" style="cursor :pointer;">
+                            <P>收件人: 李大恩<br>
+                                所在位置: <br>
+                                桃園市中壢區中北路200號
+                            </P>
+                            <i class="fa-solid fa-location-crosshairs"></i>
+                        </div>
+                    </section>
+                    <article>
+                    </article>
+                    <section>
+                    </section>
+                </div>
+            </div>
+
+            <div id="Order" class="tab" style="display:none">
+                <div>
+                    <h2>當前訂單</h2>
+
+                    <p>狀態　　　　　　　外送員正前往領取衣物
+                        預定送達時間　　　19:43預定最晚送達時間　20:12
+                        外送員　　　　　　王大明
+
+                        金額　　　　　　　$ 117</p>
+                </div>
+            </div>
+
+            <div id="Comunity" class="tab" style="display:none">
+                <h2>Tokyo</h2>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    function openTab(evt, tabName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("tab");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" white", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.firstElementChild.className += " white";
+    }
+</script>
+
+</html>

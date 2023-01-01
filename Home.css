@@ -1,0 +1,164 @@
+html,
+body,
+.main,
+.tab {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #fff;
+    font-family: 思源宋體;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main {
+    border-radius: 30px 30px 0px 0px;
+    background-color: #B8D8E5;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.tablink {
+    color: #5FA2BD;
+}
+
+i,
+ul {
+    font-size: 4vh;
+    padding: 15px;
+}
+
+.white {
+    color: white;
+}
+
+.blue {
+    color: lightblue;
+}
+
+#Home {
+    background-color: #5FA2BD;
+}
+
+.home {
+    margin: 15px;
+}
+
+section div {
+    background-color: #fff;
+    margin: auto;
+}
+
+.h1 {
+    font-size: 10vw;
+}
+
+p {
+    padding: 5px;
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+.ad {
+    margin: 50px;
+}
+
+.fu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+    justify-content: space-evenly;
+}
+
+.fu1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.fu2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: auto;
+}
+
+.fu1,
+.fu2,
+.lo1,
+.lo2 {
+    border: solid 1px;
+    border-radius: 30px;
+    margin: auto;
+    width: 100%;
+}
+
+.lo1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.lo1 input {
+    width: 70%;
+}
+
+.location {
+    display: grid;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+.loc {
+    margin: 5px;
+}
+
+.lo2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+}
+
+
+.ul {
+    list-style: none;
+}
+
+
+@media (max-width: 600px) {}
+
+@media (min-width: 601px) {}
+
+@media (min-width: 700px) {
+    .weather-forecast {
+        width: 700px;
+    }
+}
