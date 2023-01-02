@@ -56,6 +56,10 @@ ul {
     margin: 15px;
 }
 
+.member {
+    flex-direction: column;
+}
+
 section div {
     background-color: #fff;
     margin: auto;
@@ -152,13 +156,44 @@ p {
     list-style: none;
 }
 
+.me {
+    padding: 24px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
+}
+.name{
+    font-weight: 900;
+}
+.me a{
+    color: #5FA2BD;
+text-decoration: none;
+}
+.proflie {
+    flex-direction: row;
+}
 
+.me1 {
+    background-color: #fff;
+    padding-top: 24px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+.me1 i{
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.me1{
+    text-decoration: none;
+    color: #000;
+}
 @media (max-width: 600px) {}
 
 @media (min-width: 601px) {}
 
-@media (min-width: 700px) {
-    .weather-forecast {
-        width: 700px;
-    }
-}
+@media (min-width: 700px) {}
