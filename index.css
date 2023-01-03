@@ -33,6 +33,9 @@ nav {
 .tablink {
     color: #5FA2BD;
 }
+.ranklink {
+    color: #5FA2BD;
+}
 
 i,
 ul {
@@ -55,7 +58,15 @@ ul {
 .home {
     margin: 15px;
 }
-
+.com1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.bg,
+.rank{
+    color: #fff;
+    background-color: #5FA2BD;
+}
 .member {
     flex-direction: column;
 }
@@ -163,13 +174,16 @@ p {
     align-items: center;
     flex-direction: row;
 }
-.name{
+
+.name {
     font-weight: 900;
 }
-.me a{
+
+.me a {
     color: #5FA2BD;
-text-decoration: none;
+    text-decoration: none;
 }
+
 .proflie {
     flex-direction: row;
 }
@@ -182,16 +196,19 @@ text-decoration: none;
     flex-wrap: nowrap;
     align-items: flex-start;
 }
-.me1 i{
+
+.me1 i {
     width: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.me1{
+
+.me1 {
     text-decoration: none;
     color: #000;
 }
+
 @media (max-width: 600px) {}
 
 @media (min-width: 601px) {}

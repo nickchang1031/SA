@@ -95,7 +95,7 @@
                     </div>
                     <div>
                         <h2>評分</h2>
-                        
+
                     </div>
                 </section>
                 <section>
@@ -112,11 +112,24 @@
 
             <div id="Comunity" class="tab" style="display:none">
                 <section>
-                    <div>
+                    <div class="storecom">
                         <h2>智慧喜社群</h2>
-                        <p>劉老教授智慧喜 中壢中原店</p>
-                        <i class="fa-solid fa-medal"></i>
-                        <i class="fa-solid fa-ranking-star"></i>
+                        <select name="store" id="">
+                            <option>劉老教授智慧喜 中壢中原店</option>
+                        </select>
+                        <div class="com1">
+                            <a href="javascript:void(0)" onclick="openrank(event, 'store');">
+                                <div class="ranklink">
+                                    <i class="fa-solid fa-medal"></i></div>
+                            </a>
+                            <a href="javascript:void(0)" onclick="openrank(event, 'member');">
+                                <div class="ranklink">
+                                    <i class="fa-solid fa-ranking-star"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="store" class="rank" style="display:none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit voluptatum dignissimos fugit officia culpa rem nihil, provident minima quo exercitationem esse magnam sequi maiores quasi doloribus tenetur! Quidem, qui animi?</div>
+                        <div id="member" class="rank" style="display:none">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, nesciunt atque aliquid asperiores numquam maiores, repellendus eveniet excepturi provident ea perferendis! Dignissimos placeat, laborum mollitia voluptate quidem non iste repellat?</div>
                     </div>
                 </section>
             </div>
@@ -128,10 +141,18 @@
                             <a href="profile.html">檢視帳戶資料</a>
                         </div>
                     </div>
-                    <a href="favorite.html" class="me1"><i class="fa-solid fa-heart"></i><p>最愛店家</p></a>
-                    <a href="promotion.html" class="me1"><i class="fa-solid fa-gift"></i><p>優惠/獎勵</p></a>
-                    <a href="scorestore.html" class="me1"><i class="fa-solid fa-star"></i><p>積分</p></a>
-                    <a href="receipt.html" class="me1"><i class="fa-solid fa-receipt"></i><p>發票</p></a>
+                    <a href="favorite.html" class="me1"><i class="fa-solid fa-heart"></i>
+                        <p>最愛店家</p>
+                    </a>
+                    <a href="promotion.html" class="me1"><i class="fa-solid fa-gift"></i>
+                        <p>優惠/獎勵</p>
+                    </a>
+                    <a href="scorestore.html" class="me1"><i class="fa-solid fa-star"></i>
+                        <p>積分</p>
+                    </a>
+                    <a href="receipt.html" class="me1"><i class="fa-solid fa-receipt"></i>
+                        <p>發票</p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -152,6 +173,20 @@
         }
         document.getElementById(tabName).style.display = "block";
         evt.currentTarget.firstElementChild.className += " white";
+    }
+
+    function openrank(evt, rankName) {
+        var i, x, ranklinks;
+        x = document.getElementsByClassName("rank");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        ranklinks = document.getElementsByClassName("ranklink");
+        for (i = 0; i < x.length; i++) {
+            ranklinks[i].className = ranklinks[i].className.replace(" bg", "");
+        }
+        document.getElementById(rankName).style.display = "block";
+        evt.currentTarget.firstElementChild.className += " bg";
     }
 </script>
 
