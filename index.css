@@ -33,6 +33,7 @@ nav {
 .tablink {
     color: #5FA2BD;
 }
+
 .ranklink {
     color: #5FA2BD;
 }
@@ -58,26 +59,33 @@ ul {
 .home {
     margin: 15px;
 }
-.com1{
+
+.com1 {
     display: flex;
     flex-wrap: wrap;
 }
+
 .bg,
-.rank{
+.rank {
     color: #fff;
     background-color: #5FA2BD;
 }
+
 .member {
     flex-direction: column;
 }
 
-section div {
+section>div {
+    margin-top: 24px;
     background-color: #fff;
     margin: auto;
+    border-radius: 30px;
 }
 
-.h1 {
-    font-size: 10vw;
+h2 {
+    padding: 5px;
+    margin: auto;
+    font-size: 6vw;
 }
 
 p {
