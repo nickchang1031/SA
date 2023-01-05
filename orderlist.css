@@ -1,0 +1,26 @@
+.tab{
+    background-color: #5FA2BD;
+}
+
+.fa-cog:before, .fa-gear:before {
+    content: none;
+}
+.fa-cog {
+    color: #B8D8E5;
+    size: 100%;
+  }
+.ch {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+    justify-content: space-evenly;
+}
+.ch1 {
+    display: flex;
+    padding: auto;
+    align-items: center;
+    justify-content: center;
+}
+.ch1 p{
+    color: #5FA2BD;
+}
